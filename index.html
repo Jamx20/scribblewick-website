@@ -163,6 +163,11 @@ h2 {
   background: linear-gradient(#fff7fb, #f8d5e8);
   box-shadow: 0 5px 0 #f0bdd4;
 }
+.shop a.free {
+  min-height: 80px;
+  background: linear-gradient(#faf7f4, #f7e9fa);
+  box-shadow: 0 5px 0 #e3b6e4;
+}
 .shop a::after {
   content: "";
   position: absolute;
@@ -172,6 +177,7 @@ h2 {
   pointer-events: none;
 }
 .shop a.etsy::after { border-color: #f0b0cc; }
+.shop a.free::after { border-color: #c9a4d4; }
 .shop a:hover { transform: translateY(-2px); }
 .shop a:active { transform: translateY(1px); }
 .shop a:focus-visible {
@@ -195,6 +201,7 @@ h2 {
 }
 .shop a.etsy b,
 .shop a.etsy small { color: #6a203f; }
+.shop a.free b { color: #5c3468; }
 .dream-wrap { text-align: center; }
 .dream {
   display: inline-block;
@@ -248,6 +255,7 @@ footer { text-align: center; padding: 20px 8px 4px; }
   .star-small, .heart-small { width: 50px; }
   .cluster { gap: 14px; }
   .shop { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .shop a.free { grid-column: 1 / -1; }
   .bunny { width: 100px; }
   .heart { width: 92px; }
   .star { width: 86px; }
@@ -285,6 +293,7 @@ footer { text-align: center; padding: 20px 8px 4px; }
     <nav class="shop" aria-label="Shop ScribbleWick">
       <a href="https://www.amazon.com/s?k=ScribbleWick" target="_blank" rel="noopener noreferrer" aria-label="Search ScribbleWick colouring books on Amazon"><span><b>Colouring Books</b><small>DISCOVER ON AMAZON ↗</small></span></a>
       <a class="etsy" href="https://scribblewickkids.etsy.com" target="_blank" rel="noopener noreferrer" aria-label="Visit the official ScribbleWick Etsy shop"><span><b>Journals &amp; More</b><small>SHOP OUR ETSY STORE ↗</small></span></a>
+      <a class="free" href="free/fairy-forest/"><span><b>Free Printables</b></span></a>
     </nav>
     <div class="dream-wrap"><p class="dream">✿ Small books, big dreams ✿</p></div>
     <p class="explain">The Etsy button links to our official shop. The Amazon button currently searches for ScribbleWick until our direct book page is added.</p>
