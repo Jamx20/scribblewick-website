@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#d7eefb">
+<meta name="description" content="Free Fairy Forest coloring pack from ScribbleWick: 30 printable coloring pages for ages 3–6, in A4 or US Letter.">
+<title>Free Fairy Forest Coloring Pack ♡ ScribbleWick</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #faf7f4;
+  --ink: #534154;
+  --rose: #8d315c;
+  --mauve: #6d4e66;
+  --sky: #cfe6f8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Nunito, system-ui, sans-serif;
+  color: var(--ink);
+  background-color: var(--sky);
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.62) 50%, transparent 50%),
+    linear-gradient(rgba(255,255,255,.62) 50%, transparent 50%);
+  background-size: 26px 26px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.page {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: 16px 12px 28px;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 0 12px;
+  color: #5c3d52;
+  font: 800 12px/1.4 Nunito, sans-serif;
+  letter-spacing: .16em;
+  text-align: center;
+}
+.eyebrow::before,
+.eyebrow::after {
+  content: "";
+  height: 1px;
+  width: min(72px, 18vw);
+  background: #c9a4d4;
+}
+h1 { margin: 0; font-size: inherit; font-weight: inherit; }
+.logo {
+  width: 158px;
+  margin: 0 auto;
+}
+.banner-mat {
+  margin: 14px 0 16px;
+  background: #fff;
+  border: 3px dashed #f0b7d0;
+  border-radius: 22px;
+  padding: 8px;
+}
+.banner { width: 100%; }
+.card {
+  position: relative;
+  background: var(--cream);
+  border: 3px solid #fff;
+  border-radius: 32px;
+  box-shadow: 0 14px 34px rgba(110, 155, 190, .28);
+  padding: 18px 14px 12px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 2px dashed #f3c4dc;
+  border-radius: 24px;
+  pointer-events: none;
+}
+.card > * { position: relative; z-index: 1; }
+.ribbon {
+  margin: 2px 0 8px;
+  text-align: center;
+  color: #a45b86;
+  letter-spacing: .28em;
+  font-size: 13px;
+}
+.cluster,
+.friends {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.cluster { gap: 8px; margin: 2px 0 4px; }
+.bow { width: 128px; }
+.star-small,
+.heart-small { width: 44px; margin-bottom: 10px; }
+.sub {
+  margin: 2px 0 0;
+  text-align: center;
+  color: var(--mauve);
+  font: 800 12px/1.4 Nunito, sans-serif;
+  letter-spacing: .14em;
+}
+h2 {
+  margin: 12px 0 8px;
+  text-align: center;
+  font-family: Fredoka, system-ui, sans-serif;
+  font-weight: 550;
+  font-size: clamp(1.65rem, 5vw, 2.3rem);
+  line-height: 1.2;
+  color: var(--rose);
+}
+.intro {
+  margin: 0 auto;
+  max-width: 38rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.divider { width: 100%; margin: 12px auto 8px; }
+.prompt {
+  margin: 4px 0 12px;
+  text-align: center;
+  color: #6a4560;
+  font: 800 12px/1.4 Nunito, sans-serif;
+  letter-spacing: .08em;
+}
+.shop {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.shop a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
+  padding: 16px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid #fff;
+  position: relative;
+  background: linear-gradient(#f7fbfe, #d5eefc);
+  box-shadow: 0 5px 0 #b7d4ea;
+  transition: transform .16s ease;
+}
+.shop a.etsy {
+  background: linear-gradient(#fff7fb, #f8d5e8);
+  box-shadow: 0 5px 0 #f0bdd4;
+}
+.shop a::after {
+  content: "";
+  position: absolute;
+  inset: 6px 12px;
+  border: 2px dashed #8ebfda;
+  border-radius: 999px;
+  pointer-events: none;
+}
+.shop a.etsy::after { border-color: #f0b0cc; }
+.shop a:hover { transform: translateY(-2px); }
+.shop a:active { transform: translateY(1px); }
+.shop a:focus-visible {
+  outline: 3px solid #4a2f5c;
+  outline-offset: 3px;
+}
+.shop b,
+.shop small { display: block; }
+.shop b {
+  font-family: Fredoka, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.15;
+  color: #123a56;
+}
+.shop small {
+  margin-top: 4px;
+  font: 800 12px/1.3 Nunito, sans-serif;
+  letter-spacing: .05em;
+  color: #123a56;
+}
+.shop a.etsy b,
+.shop a.etsy small { color: #6a203f; }
+.dream-wrap { text-align: center; }
+.dream {
+  display: inline-block;
+  margin: 16px auto 8px;
+  padding: 8px 18px;
+  background: #f7e9fa;
+  border: 2px dashed #e3b6e4;
+  border-radius: 999px;
+  color: #5c3468;
+  font: 550 1.05rem/1.3 Fredoka, system-ui, sans-serif;
+  transform: rotate(-1.5deg);
+}
+.explain {
+  max-width: 34rem;
+  margin: 8px auto 4px;
+  text-align: center;
+  font-size: .95rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.friends { gap: 16px; margin: 12px 0 6px; }
+.bunny { width: 84px; }
+.heart { width: 72px; }
+.star { width: 66px; }
+.scallop { width: 100%; margin: 4px 0 0; }
+footer { text-align: center; padding: 20px 8px 4px; }
+.slogan {
+  margin: 0 0 6px;
+  font-family: Fredoka, system-ui, sans-serif;
+  font-weight: 550;
+  font-size: clamp(1.3rem, 3.4vw, 1.75rem);
+  line-height: 1.25;
+  color: #7a2f56;
+}
+.fine {
+  margin: 0;
+  color: #4e3d50;
+  font-size: .85rem;
+  font-weight: 700;
+}
+.fine span { color: #a33d6c; }
+/* free download page additions */
+.shop a.dl { min-height: 76px; }
+.shop a.dl b { font-size: 1.3rem; }
+.preview-mat {
+  margin: 14px auto 6px;
+  max-width: 640px;
+  background: #fff;
+  border: 3px dashed #f0b7d0;
+  border-radius: 22px;
+  padding: 8px;
+}
+.preview { width: 100%; border-radius: 14px; }
+.caption { margin: 6px 0 0; text-align: center; font-size: .85rem; font-weight: 700; color: var(--mauve); }
+.tip {
+  max-width: 34rem;
+  margin: 14px auto 4px;
+  text-align: center;
+  font: 800 12px/1.5 Nunito, sans-serif;
+  letter-spacing: .05em;
+  color: #6a4560;
+}
+.links { margin: 10px 0 4px; text-align: center; font-weight: 800; font-size: .95rem; }
+.links a { color: var(--rose); }
+.links a:focus-visible { outline: 3px solid #4a2f5c; outline-offset: 3px; }
+.made { max-width: 34rem; margin: 8px auto 4px; text-align: center; font-size: .85rem; line-height: 1.5; color: #4e3d50; }
+@media (min-width: 800px) {
+  body { background-size: 32px 32px; }
+  .page { padding: 28px 20px 40px; }
+  .logo { width: 220px; }
+  .eyebrow { font-size: 13px; margin-bottom: 16px; }
+  .banner-mat { margin-top: 16px; padding: 10px; border-radius: 26px; }
+  .card { padding: 22px 28px 16px; border-radius: 40px; }
+  .card::before { border-radius: 32px; }
+  .bow { width: 158px; }
+  .star-small, .heart-small { width: 50px; }
+  .cluster { gap: 14px; }
+  .shop { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .bunny { width: 100px; }
+  .heart { width: 92px; }
+  .star { width: 86px; }
+  .friends { gap: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+  .dream, .shop a:hover, .shop a:active { transform: none; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">♡ A LITTLE GIFT FROM SCRIBBLEWICK ♡</p>
+  <header>
+    <h1>
+      <a href="../../"><img class="logo" src="../../images/logo-640.webp" srcset="../../images/logo-400.webp 400w, ../../images/logo-640.webp 640w" sizes="(max-width: 799px) 158px, 220px" alt="ScribbleWick" width="640" height="640"></a>
+    </h1>
+  </header>
+  <main class="card">
+    <p class="ribbon" aria-hidden="true">♡　✿　♡　✿　♡　✿　♡</p>
+    <div class="cluster" aria-hidden="true">
+      <img class="star-small" src="../../images/star-small.webp" alt="" width="50" height="53">
+      <img class="bow" src="../../images/bow.webp" alt="" width="158" height="132">
+      <img class="heart-small" src="../../images/heart-small.webp" alt="" width="53" height="53">
+    </div>
+    <p class="sub">FREE PRINTABLE ♡ AGES 3–6</p>
+    <h2>Free Fairy Forest Coloring Pack ♡</h2>
+    <p class="intro">30 sweet fairy forest coloring pages for little artists ages 3–6. It’s a free printable download — just choose your paper size below, print, and start coloring! 💗</p>
+    <img class="divider" src="../../images/divider-hearts.webp" alt="" width="1018" height="62" loading="lazy" decoding="async">
+    <p class="prompt">CHOOSE YOUR PAPER SIZE</p>
+    <nav class="shop" aria-label="Download the Fairy Forest coloring pack">
+      <a class="dl" href="Scribblewick_Fairy-Forest_A4.pdf" download="Scribblewick_Fairy-Forest_A4.pdf" type="application/pdf"><span><b>Download A4 (PDF)</b><small>UK, EUROPE &amp; WORLDWIDE · 3 MB</small></span></a>
+      <a class="dl etsy" href="Scribblewick_Fairy-Forest_US-Letter.pdf" download="Scribblewick_Fairy-Forest_US-Letter.pdf" type="application/pdf"><span><b>Download US Letter (PDF)</b><small>USA &amp; CANADA · 3 MB</small></span></a>
+    </nav>
+    <p class="tip">🖨️ Printing tip: print at 100% / “Actual size” (not “Fit to page”) so the pages come out just right.</p>
+    <div class="preview-mat">
+      <img class="preview" src="preview.webp" alt="Preview of all 30 Fairy Forest coloring pages" width="1400" height="1633" loading="lazy" decoding="async">
+    </div>
+    <p class="caption">A peek at all 30 pages inside the pack</p>
+    <div class="dream-wrap"><p class="dream">✿ Happy coloring! ✿</p></div>
+    <p class="explain">For personal and classroom use. Please don’t resell or share the files — share this page instead!</p>
+    <p class="links"><a href="../../">← Back to the ScribbleWick homepage</a> · <a href="https://scribblewickkids.etsy.com" target="_blank" rel="noopener noreferrer">Visit our Etsy shop ↗</a></p>
+    <!-- AI DISCLOSURE: PENDING JimBob approval -->
+    <p class="made" id="ai-disclosure"><b>How this was made:</b> Illustrations created with AI tools under our creative direction, then edited and laid out by Scribblewick.</p>
+    <!-- /AI DISCLOSURE -->
+    <div class="friends" aria-hidden="true">
+      <img class="bunny" src="../../images/bunny.webp" alt="" width="100" height="122" loading="lazy" decoding="async">
+      <img class="heart" src="../../images/heart.webp" alt="" width="108" height="96" loading="lazy" decoding="async">
+      <img class="star" src="../../images/star.webp" alt="" width="95" height="99" loading="lazy" decoding="async">
+    </div>
+    <img class="scallop" src="../../images/border-scallop.webp" alt="" width="1036" height="89" loading="lazy" decoding="async">
+  </main>
+  <footer>
+    <p class="slogan">Little pages, big imaginations ♡</p>
+    <p class="fine">Made with <span>♡</span> and a little imagination · © ScribbleWick</p>
+  </footer>
+</div>
+</body>
+</html>
