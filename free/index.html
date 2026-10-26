@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#d7eefb">
+<meta name="description" content="Free coloring pages for little artists from Scribblewick. Pick a pack, print and color.">
+<title>Free Printables | Scribblewick</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #faf7f4;
+  --ink: #534154;
+  --rose: #8d315c;
+  --mauve: #6d4e66;
+  --sky: #cfe6f8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Nunito, system-ui, sans-serif;
+  color: var(--ink);
+  background-color: var(--sky);
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.62) 50%, transparent 50%),
+    linear-gradient(rgba(255,255,255,.62) 50%, transparent 50%);
+  background-size: 26px 26px;
+}
+img { max-width: 100%; height: auto; object-fit: contain; display: block; }
+.page {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 16px 12px 28px;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 0 12px;
+  color: #5c3d52;
+  font: 800 12px/1.4 Nunito, sans-serif;
+  letter-spacing: .08em;
+  text-align: center;
+}
+.eyebrow::before,
+.eyebrow::after {
+  content: "";
+  height: 1px;
+  width: min(72px, 18vw);
+  background: #c9a4d4;
+}
+.logo { width: 158px; margin: 0 auto; }
+.cluster {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0 4px;
+}
+.bow { width: 96px; }
+.star-small, .heart-small { width: 40px; margin-bottom: 8px; }
+h1 {
+  margin: 8px 0 8px;
+  text-align: center;
+  font-family: Fredoka, system-ui, sans-serif;
+  font-weight: 550;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  line-height: 1.15;
+  color: var(--rose);
+}
+.intro {
+  margin: 0 auto 16px;
+  max-width: 36rem;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.packs {
+  display: grid;
+  grid-template-columns: minmax(0, 360px);
+  justify-content: center;
+  gap: 18px;
+  margin: 0 auto;
+}
+.pack {
+  position: relative;
+  background: var(--cream);
+  border: 3px solid #fff;
+  border-radius: 28px;
+  box-shadow: 0 14px 34px rgba(110, 155, 190, .28);
+  padding: 12px 12px 16px;
+  text-align: center;
+}
+.pack::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 2px dashed #f3c4dc;
+  border-radius: 20px;
+  pointer-events: none;
+}
+.pack > * { position: relative; z-index: 1; }
+.scallop { width: 86%; margin: 2px auto 8px; }
+.preview-mat {
+  margin: 0 auto 10px;
+  background: #fff;
+  border: 3px dashed #f0b7d0;
+  border-radius: 18px;
+  padding: 8px;
+}
+.preview { width: 100%; border-radius: 12px; }
+.pack > .charm {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  width: 72px;
+  height: auto;
+  z-index: 2;
+}
+h2 {
+  margin: 4px 0 4px;
+  font-family: Fredoka, system-ui, sans-serif;
+  font-weight: 550;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  color: var(--rose);
+}
+.meta {
+  margin: 0 0 12px;
+  color: var(--mauve);
+  font: 800 13px/1.4 Nunito, sans-serif;
+  letter-spacing: .04em;
+}
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 64px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid #fff;
+  position: relative;
+  background: linear-gradient(#fff7fb, #f8d5e8);
+  box-shadow: 0 5px 0 #f0bdd4;
+  color: #6a203f;
+  font-family: Fredoka, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.2;
+}
+.cta::after {
+  content: "";
+  position: absolute;
+  inset: 6px 12px;
+  border: 2px dashed #f0b0cc;
+  border-radius: 999px;
+  pointer-events: none;
+}
+.cta:hover { transform: translateY(-2px); }
+.cta:active { transform: translateY(1px); }
+.cta:focus-visible, .back:focus-visible {
+  outline: 3px solid #4a2f5c;
+  outline-offset: 3px;
+}
+.soon { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100%; }
+.sticker { width: 148px; margin: 18px auto 8px; }
+.soon h2 { max-width: 14rem; }
+footer { text-align: center; padding: 22px 8px 4px; }
+.back {
+  color: var(--rose);
+  font-weight: 800;
+  text-decoration: none;
+}
+.slogan {
+  margin: 10px 0 6px;
+  font-family: Fredoka, system-ui, sans-serif;
+  font-weight: 550;
+  font-size: clamp(1.3rem, 3.4vw, 1.75rem);
+  line-height: 1.25;
+  color: #7a2f56;
+}
+.fine { margin: 0; color: #4e3d50; font-size: .85rem; font-weight: 700; }
+@media (min-width: 760px) {
+  body { background-size: 32px 32px; }
+  .page { padding: 28px 20px 40px; }
+  .logo { width: 200px; }
+  .bow { width: 128px; }
+  .star-small, .heart-small { width: 48px; }
+  .packs {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 320px));
+    gap: 22px;
+    max-width: 980px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+  .cta:hover, .cta:active { transform: none; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">♡ A little gift from Scribblewick</p>
+  <header>
+    <a href="../"><img class="logo" src="../images/logo-400.webp" srcset="../images/logo-400.webp 400w, ../images/logo-640.webp 640w" sizes="(max-width: 759px) 158px, 200px" alt="Scribblewick" width="400" height="400"></a>
+    <div class="cluster" aria-hidden="true">
+      <img class="star-small" src="../images/star-small.webp" alt="" width="50" height="53">
+      <img class="bow" src="../images/bow.webp" alt="" width="158" height="132">
+      <img class="heart-small" src="../images/heart-small.webp" alt="" width="53" height="53">
+    </div>
+  </header>
+  <main>
+    <h1>Free Printables</h1>
+    <p class="intro">Free coloring pages for little artists. Pick a pack, print and color!</p>
+    <!--
+      ADD A PACK: copy the whole <article class="pack"> block (not the "soon" card).
+      1. Create free/<folder>/ with index.html, the PDFs, preview.webp, and thumb.webp.
+         thumb.webp is a same-aspect crop of the preview, about 600px wide. Do not stretch it.
+      2. Set the image src to <folder>/thumb.webp and the button href to <folder>/.
+      3. Set the pack name and the small line (page count and ages with a hyphen, like 3-6).
+      The grid is 1 column on phones and 2 or 3 on desktop, centered, so a short row still looks intentional.
+    -->
+    <div class="packs">
+      <article class="pack">
+        <img class="scallop" src="../images/border-scallop.webp" alt="" width="1036" height="89">
+        <div class="preview-mat">
+          <img class="preview" src="fairy-forest/thumb.webp" alt="Preview of Fairy Forest coloring pages" width="600" height="562">
+        </div>
+        <img class="charm" src="stickers/friend.webp" alt="" width="191" height="220">
+        <h2>Fairy Forest</h2>
+        <p class="meta">30 coloring pages · Ages 3-6</p>
+        <a class="cta" href="fairy-forest/">Get the full 30-page pack</a>
+      </article>
+      <article class="pack soon">
+        <img class="sticker" src="stickers/soon.webp" alt="" width="196" height="171">
+        <h2>More packs coming soon</h2>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <p><a class="back" href="../">← Back to the Scribblewick homepage</a></p>
+    <p class="slogan">Little pages, big imaginations</p>
+    <p class="fine">© Scribblewick</p>
+  </footer>
+</div>
+</body>
+</html>
